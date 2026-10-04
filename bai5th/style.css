@@ -1,0 +1,60 @@
+body {
+    font-family: "times new roman", times, serif;
+    margin: 30px 50px;
+    color: #000000;
+}
+
+h1 {
+    text-align: center;
+    color: #C2185B;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.container {
+    display: flex;
+}
+
+.left {
+    width: 28%;
+    text-align: center;
+}
+
+.left img {
+    width: 250px;
+}
+
+.right {
+    width: 72%
+}
+
+h2 {
+    display: inline-block;
+    background: #FFC0CB;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 8px 15px;
+    margin: 0 0 15px 0;
+}
+
+li {
+    font-size: 22px;
+    line-height: 1.8;
+}
+
+.square {
+    list-style-type: square;
+}
+
+.circle {
+    list-style-type: circle;
+}
+
+.copyright {
+    color: #0000EE;
+    text-decoration: underline;
+    text-align: right;
+    font-size: 22px;
+    margin-top: 25px;
+}
