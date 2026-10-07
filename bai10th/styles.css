@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    background: #eef2f5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box {
+    width: 95%;
+    margin: 48px auto;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px #cccccc;
+}
+
+.head {
+    background: #0f766e;
+    color: white;
+    padding: 38px 50px;
+}
+
+.head h1 {
+    margin: 0 0 10px;
+    font-size: 40px;
+}
+
+.head p {
+    margin: 0;
+    font-size: 20px;
+}
+
+.form {
+    padding: 45px 50px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 28px;
+}
+
+label {
+    display: block;
+    color: #334155;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    border: 2px solid #cbd5e1;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.row>div:first-child input,
+.row>div:first-child select {
+    border-radius: 10px 0 0 10px;
+}
+
+.row>div:last-child input,
+.row>div:last-child select {
+    border-radius: 0 10px 10px 0;
+}
+
+textarea {
+    height: 165px;
+    border-radius: 10px;
+    resize: vertical;
+    margin-bottom: 30px;
+}
+
+.check {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 35px;
+}
+
+.check input {
+    width: 25px;
+    height: 25px;
+    justify-self: center;
+}
+
+.check label {
+    margin: 0;
+    font-size: 22px;
+}
+
+button {
+    padding: 16px 40px;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.send {
+    background: #0f766e;
+    color: white;
+}
+
+.reset {
+    background: #e2e8f0;
+    color: #334155;
+}
