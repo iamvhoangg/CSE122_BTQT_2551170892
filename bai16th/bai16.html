@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách việc cần làm - Bài 16</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="todo-app">
+        <div class="todo-header">
+            <h1>Danh sách việc cần làm</h1>
+            <p>Thêm việc mới, đánh dấu hoàn thành hoặc xoá — tất cả bằng JavaScript.</p>
+        </div>
+
+        <div class="todo-input-container">
+            <input type="text" id="taskInput" placeholder="Hoàn thành bài tập Lập trình Web">
+            <button id="addBtn">Thêm</button>
+        </div>
+
+        <ul id="taskList" class="task-list">
+            <li class="task-item completed">
+                <div class="task-content">
+                    <span class="checkbox"></span>
+                    <span class="task-text">Đọc chương HTML5 cơ bản</span>
+                </div>
+                <button class="delete-btn">Xoá</button>
+            </li>
+            <li class="task-item">
+                <div class="task-content">
+                    <span class="checkbox"></span>
+                    <span class="task-text">Làm bài tập CSS Grid</span>
+                </div>
+                <button class="delete-btn">Xoá</button>
+            </li>
+            <li class="task-item">
+                <div class="task-content">
+                    <span class="checkbox"></span>
+                    <span class="task-text">Quay video OBS nộp bài</span>
+                </div>
+                <button class="delete-btn">Xoá</button>
+            </li>
+        </ul>
+
+        <div class="todo-footer">
+            <span id="remainingCount">Còn 2 việc chưa hoàn thành</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
