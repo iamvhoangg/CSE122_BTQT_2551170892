@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 20 - Hiệu ứng ảnh CSS3 Filter & Transform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <svg style="display:none;">
+        <filter id="waveFilter">
+            <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" result="noise" />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="10" xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+    </svg>
+
+    <div class="main-container">
+        <div class="image-card">
+            <div class="image-box">
+                <img id="roseImg" src="C:\Users\HP\Documents\Gui_SV_BTTH\Anh\Bai20\hoahong.gif">
+            </div>
+            <div class="title-text">Special For You</div>
+        </div>
+
+        <div class="button-bar">
+            <button class="effect-btn active" data-effect="gray">Gray</button>
+            <button class="effect-btn" data-effect="xray">Xray</button>
+            <button class="effect-btn" data-effect="invert">Invert</button>
+            <button class="effect-btn" data-effect="fliph">FlipH</button>
+            <button class="effect-btn" data-effect="flipv">FlipV</button>
+            <button class="effect-btn" data-effect="glow">Glow</button>
+            <button class="effect-btn" data-effect="shadow">Shadow</button>
+            <button class="effect-btn" data-effect="bold-shadow">Bold Shadow</button>
+            <button class="effect-btn" data-effect="dropshadow">DropShadow</button>
+            <button class="effect-btn" data-effect="blur">Blur</button>
+            <button class="effect-btn" data-effect="wave">Wave</button>
+            <button class="effect-btn" data-effect="mask">Mask</button>
+            <button class="effect-btn" data-effect="alpha">Alpha</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
