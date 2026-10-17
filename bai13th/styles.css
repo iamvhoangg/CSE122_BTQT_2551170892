@@ -1,0 +1,83 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+.dong-ho {
+    width: calc(100% - 4px);
+    height: 422px;
+    margin: 2px;
+    background-color: #000000;
+    border-radius: 36px;
+    overflow: hidden;
+}
+
+.thoi-gian {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 58px 4%;
+}
+
+.thoi-gian img {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+}
+
+.thoi-gian .dau-hai-cham {
+    width: 52px;
+    height: 52px;
+}
+
+.khung-loi-chao {
+    width: 87.4%;
+    min-height: 241px;
+    margin: 117px auto 0;
+    background-color: #ffffff;
+    border-radius: 36px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 24px;
+}
+
+#loiChao {
+    color: #c62828;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(42px, 10vw, 136px);
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+@media (max-width: 600px) {
+    .dong-ho {
+        height: 240px;
+        border-radius: 24px;
+    }
+
+    .thoi-gian {
+        padding: 50px 2%;
+    }
+
+    .thoi-gian img {
+        width: 10%;
+        height: auto;
+        max-height: 42px;
+    }
+
+    .khung-loi-chao {
+        width: 90%;
+        min-height: 150px;
+        margin-top: 70px;
+        border-radius: 24px;
+    }
+
+    #loiChao {
+        font-size: clamp(30px, 8vw, 48px);
+    }
+}
