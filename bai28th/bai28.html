@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 28 - Khám phá điểm đến</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .carousel-item img {
+            height: 340px;
+            object-fit: cover;
+        }
+
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 8px;
+            padding: 10px 15px;
+            bottom: 20px;
+        }
+    </style>
+</head>
+
+<body class="py-4 bg-light">
+
+    <div class="container" style="max-width: 900px;">
+        <h2 class="text-center text-primary mb-4 fw-bold">Khám phá điểm đến</h2>
+
+        <div id="carouselDestinations" class="carousel slide shadow-sm rounded-3 overflow-hidden mb-4"
+            data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselDestinations" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselDestinations" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselDestinations" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="C:\Users\HP\Documents\Gui_SV_BTTH\Anh\Bai28\1-vinh-ha-long.jpg" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5 class="fw-bold m-0">Vịnh Hạ Long</h5>
+                        <small>Di sản thiên nhiên thế giới</small>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="C:\Users\HP\Documents\Gui_SV_BTTH\Anh\Bai28\2-son-doong.jpg" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5 class="fw-bold m-0">Sapa</h5>
+                        <small>Thành phố trong sương mờ</small>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="C:\Users\HP\Documents\Gui_SV_BTTH\Anh\Bai28\3-thac-ban-gioc.jpg" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5 class="fw-bold m-0">Tràng An - Ninh Bình</h5>
+                        <small>Quần thể danh thắng kỳ vĩ</small>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestinations"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselDestinations"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <ul class="nav nav-pills justify-content-center mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active fw-semibold" id="pills-intro-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-intro" type="button" role="tab">Giới thiệu</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link fw-semibold" id="pills-schedule-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-schedule" type="button" role="tab">Lịch trình</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link fw-semibold" id="pills-cost-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-cost" type="button" role="tab">Chi phí</button>
+            </li>
+        </ul>
+
+        <div class="tab-content bg-white p-4 rounded-3 border shadow-sm" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-intro" role="tabpanel">
+                Tour 3 ngày 2 đêm khám phá các danh thắng miền Bắc, khởi hành hằng tuần.
+            </div>
+            <div class="tab-pane fade" id="pills-schedule" role="tabpanel">
+                <strong>Ngày 1:</strong> Hà Nội - Vịnh Hạ Long.<br>
+                <strong>Ngày 2:</strong> Hạ Long - Sapa.<br>
+                <strong>Ngày 3:</strong> Sapa - Trở về Hà Nội.
+            </div>
+            <div class="tab-pane fade" id="pills-cost" role="tabpanel">
+                Giá tour trọn gói: <strong>3.500.000 VNĐ / người</strong> (Đã bao gồm phương tiện di chuyển, ăn uống và
+                khách sạn 3 sao).
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
